@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KronosTiers - Bedrock Rankings</title>
+    <!-- Tailwind CSS para los estilos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#030712] text-slate-100 font-sans min-h-screen selection:bg-cyan-500 selection:text-white">
+
+    <!-- Navbar Superior -->
+    <header class="bg-[#070e1b]/90 backdrop-blur border-b border-cyan-500/20 p-4 flex justify-between items-center sticky top-0 z-50">
+        <div class="flex items-center space-x-2">
+            <span class="text-xl font-black tracking-wider text-cyan-400 drop-shadow-[0_0_10px_rgba(34,211,238,0.5)]">KRONOS<span class="text-white">TIERS</span></span>
+        </div>
+        <div class="flex space-x-4 text-sm font-semibold">
+            <button class="text-cyan-400 border-b-2 border-cyan-400 pb-1">Ranking</button>
+            <button class="text-slate-400 hover:text-cyan-300 transition">LTM</button>
+            <button class="text-slate-400 hover:text-cyan-300 transition">Vainilla</button>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="max-w-4xl mx-auto p-4 space-y-4">
+        
+        <!-- Barra de Búsqueda -->
+        <div class="relative">
+            <input type="text" placeholder="Buscar jugador en KronosTiers..." class="w-full bg-[#070e1b] border border-cyan-500/30 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition">
+        </div>
+
+        <!-- Tarjeta de Jugador #1 -->
+        <div class="bg-[#070e1b]/80 border border-cyan-500/30 rounded-2xl p-4 shadow-[0_0_20px_rgba(6,182,212,0.05)] space-y-4">
+            
+            <!-- Encabezado del Jugador -->
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <!-- Posición #1 -->
+                    <span class="text-2xl font-black text-cyan-400 italic">1</span>
+                    <!-- Avatar / Skin simulada -->
+                    <div class="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-700 rounded-xl overflow-hidden flex items-center justify-center border border-cyan-400/40 shadow-[0_0_10px_rgba(6,182,212,0.3)]">
+                        <span class="text-xs font-bold text-white">Skin</span>
+                    </div>
+                    <div>
+                        <h2 class="text-lg font-bold text-white flex items-center gap-2">
+                            KronosPlayer
+                        </h2>
+                        <span class="text-xs text-cyan-300 font-medium">Rey de Bedrock</span>
+                    </div>
+                </div>
+                <!-- Región -->
+                <div class="bg-cyan-950/60 border border-cyan-800/50 text-cyan-400 text-xs font-black px-3 py-1 rounded-lg tracking-wider">
+                    N / A
+                </div>
+            </div>
+
+            <!-- Niveles / Tier Badges -->
+            <div class="border-t border-cyan-500/20 pt-3">
+                <p class="text-xs font-bold text-slate-400 mb-2 uppercase tracking-wider">Niveles</p>
+                <div class="grid grid-cols-6 gap-2 text-center">
+                    <!-- Categorías -->
+                    <div class="bg-[#030712] border border-cyan-900/60 rounded-xl p-2 hover:border-cyan-500/50 transition">
+                        <span class="block text-[10px] text-cyan-400 font-bold">HT</span>
+                        <span class="text-sm font-black text-white">1</span>
+                    </div>
+                    <div class="bg-[#030712] border border-cyan-900/60 rounded-xl p-2 hover:border-cyan-500/50 transition">
+                        <span class="block text-[10px] text-cyan-400 font-bold">HT</span>
+                        <span class="text-sm font-black text-white">1</span>
+                    </div>
+                    <div class="bg-[#030712] border border-cyan-900/60 rounded-xl p-2 hover:border-cyan-500/50 transition">
+                        <span class="block text-[10px] text-cyan-400 font-bold">HT</span>
+                        <span class="text-sm font-black text-white">1</span>
+                    </div>
+                    <div class="bg-[#030712] border border-cyan-900/60 rounded-xl p-2 hover:border-cyan-500/50 transition">
+                        <span class="block text-[10px] text-cyan-400 font-bold">HT</span>
+                        <span class="text-sm font-black text-white">1</span>
+                    </div>
+                    <div class="bg-[#030712] border border-cyan-900/60 rounded-xl p-2 hover:border-cyan-500/50 transition">
+                        <span class="block text-[10px] text-cyan-400 font-bold">HT</span>
+                        <span class="text-sm font-black text-white">1</span>
+                    </div>
+                    <div class="bg-[#030712] border border-cyan-900/60 rounded-xl p-2 hover:border-cyan-500/50 transition">
+                        <span class="block text-[10px] text-cyan-400 font-bold">HT</span>
+                        <span class="text-sm font-black text-white">1</span>
+                    </div>
+                </div>
+
+                <!-- Segunda línea de modalidades -->
+                <div class="grid grid-cols-2 gap-2 mt-2">
+                    <div class="bg-[#030712] border border-cyan-900/60 rounded-xl p-2 flex items-center justify-center space-x-2">
+                        <span class="text-xs">💙</span>
+                        <div>
+                            <span class="text-[10px] text-cyan-400 block font-bold">LT 1</span>
+                        </div>
+                    </div>
+                    <div class="bg-[#030712] border border-cyan-900/60 rounded-xl p-2 flex items-center justify-center space-x-2">
+                        <span class="text-xs">⚔️</span>
+                        <div>
+                            <span class="text-[10px] text-cyan-400 block font-bold">LT 1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
